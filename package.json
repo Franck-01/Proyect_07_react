@@ -1,0 +1,39 @@
+{
+  "name": "proyect_07_react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app_backend/server",
+    "server": "nodemon app_backend/server",
+    "client": "npm run start --prefix react-app",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node app_backend/seeder",
+    "data:destroy": "node app_backend/seeder -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Franck-01/Proyect_07_react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Franck-01/Proyect_07_react/issues"
+  },
+  "homepage": "https://github.com/Franck-01/Proyect_07_react#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1"
+  }
+}
